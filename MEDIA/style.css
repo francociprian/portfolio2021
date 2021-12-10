@@ -214,6 +214,97 @@ body {
 }
 
 
+/* MOBILE */
+@media (max-width: 768px) {
+    body {
+      padding-top: 70px;
+    }
+  
+    .header {
+      height: 50px;
+    }
+  
+    .logo {
+      font-size: 25px;
+      font-weight: 800;
+      padding: 0 20px;
+      line-height: 50px;
+    }
+  
+    .nav-menu {
+      font-weight: 700;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      background-color: rgb(217, 202, 179);
+      position: fixed;
+      top: 50px;
+      width: 100%;
+      padding: 0;
+  
+      height: calc(100% - 30px);
+      overflow-y: auto;
+  
+      left: 100%;
+      transition: left 0.4s;  
+    }
+  
+    .nav-menu-item {
+      line-height: 80px;
+      text-transform: uppercase;
+    }
+  
+    .nav-menu-link:hover {
+      background: none;
+    }
+  
+    .nav-toggle {
+      display: block;
+      font-size: 25px;
+    }
+    
+    .nav-menu_visible {
+      left: 0;
+    }
+  
+    .nav-toggle:focus:not(:focus-visible) {
+      outline: none;
+    }
+
+    /* INICIO */
+    .inicio {
+      height: 88vh;
+    }
+
+    .perfil-img { 
+      max-width: 300px;
+      border-radius: 50%;
+      border: 4px solid #6D9886;
+    }
+
+    /*HERRAMIENTAS*/
+    .herramientas-iconos {
+      padding-top: 30px;
+    }
+
+    /* PORTFOLIO */
+
+    .portfolio__galeria {
+      max-width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+    
+    .portfolio__galeria-img {
+      max-width: 80%;
+      padding-top: 50px;
+      padding-bottom: 15px;
+      
+    } 
+
+  }
+
+
 
 
 
