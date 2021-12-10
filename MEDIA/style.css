@@ -12,9 +12,7 @@ section[id] {
     scroll-margin-top: 30px;
 }
 
-
 body {
-    
     background-color: rgb(59, 58, 58);
     font-family: 'Raleway', sans-serif;
     color: rgb(255, 255, 255);
@@ -92,13 +90,14 @@ body {
   
 .nav-menu-link:hover {
     background-color: rgba(217, 202, 179, 0.2);
+    border-radius: 25px;
     transition: 0.5s;  
 
 }
 /* LOGO MENU RESPONSIVE */
 
 .nav-toggle {
-    color: white;
+    color: rgb(255, 255, 255);
     background: none;
     border: none;
     font-size: 30px;
@@ -167,6 +166,9 @@ body {
 
 .fa-css3-alt {
     color: #2965f1;
+}
+.contenedor__iconos-texto {
+    color: rgb(255, 255, 255);
 }
 
 
