@@ -33,6 +33,11 @@ body {
 
 .titulo {
     font-weight: 500;
+    font-size: 2rem;
+}
+
+.parrafo {
+    font-size: 1.2em;
 }
 
 .iconos {
@@ -51,7 +56,6 @@ body {
     font-family: 'Inconsolata', monospace;
     font-weight: 200;
     background-color: rgb(33, 33, 33);
-    ;
     height: 60px;
     position: fixed;
     width: 100%;
@@ -127,7 +131,6 @@ body {
 .perfil-img {
     max-width: 550px;
     border-radius: 50%;
-    /* border: 4px solid #6D9886; */
 }
 
 .saludo {
@@ -226,11 +229,14 @@ body {
     padding-bottom: 100px;
 }
 
-.contacto__iconos {
+.contacto__body {
     display: flex;
     justify-content: space-evenly;
     padding: 30px 30px;
     text-align: center;
+}
+.links__iconos{
+    font-size: 5rem;
 }
 
 
@@ -248,19 +254,19 @@ body {
         padding-top: 70px;
     }
 
-    .iconos {
-        font-size: 6rem;
+    .parrafo {
+        font-size: 1.3em;
     }
 
     .header {
-        height: 50px;
+        height: 70px;
     }
 
     .logo {
-        font-size: 25px;
+        font-size: 2.5em;
         font-weight: 800;
         padding: 0 20px;
-        line-height: 50px;
+        line-height: 70px;
     }
 
     .nav-menu {
@@ -270,7 +276,7 @@ body {
         margin: 0;
         background-color: rgb(217, 202, 179);
         position: fixed;
-        top: 50px;
+        top: 70px;
         width: 100%;
         padding: 0;
 
@@ -292,7 +298,7 @@ body {
 
     .nav-toggle {
         display: block;
-        font-size: 25px;
+        font-size: 2.5em;
     }
 
     .nav-menu_visible {
@@ -309,17 +315,19 @@ body {
     }
 
     .perfil-img {
-        max-width: 300px;
-        border-radius: 50%;
-        border: 4px solid #6D9886;
+        max-width: 450px;
     }
 
     /*HERRAMIENTAS*/
     .herramientas-iconos {
         padding-top: 30px;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
+    }
+
+    .iconos {
+        font-size: 6rem;
     }
 
     /* PORTFOLIO */
@@ -331,10 +339,94 @@ body {
     }
 
     .portfolio__galeria-img {
-        max-width: 80%;
         padding-top: 50px;
         padding-bottom: 15px;
 
     }
 
+    .links__iconos{
+        font-size: 4rem;
+    }
+
 }
+
+
+
+
+.proyectos__galeria {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+.proyectos__galeria article {
+    width: 950px;
+    height: 480px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .proyectos__galeria article:hover p,
+  .proyectos__galeria article:hover h3,
+  .proyectos__galeria article:hover::before {
+    opacity: .9;
+  }
+  
+  .proyectos__galeria article::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.938);
+    opacity: 0;
+    transition: opacity .7s;
+  }
+  
+  .proyectos__galeria article h3,
+  .proyectos__galeria article p {
+    position: relative;
+    z-index: 99;
+    opacity: 0;
+    transition: opacity .5s;
+    color: white;
+    text-align: center;
+  }
+  
+  a {
+      color: aliceblue;
+      list-style: none;
+      text-decoration: none;
+  }
+
+  .proyectos__galeria article .proyecto__titulo {
+    font-size: 2.5em;
+    text-decoration-color: rgba(237, 242, 244, 0.623);
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+  }
+  
+  .proyectos__galeria article .proyecto__descripcion {
+    font-size: 1.5em;
+    padding-bottom: 2rem;
+  }
+  
+  .proyectos__galeria .img-1 {
+    background-image: url(../img/proyectos/9points.webp);
+    flex-direction: column;
+  }
+  .proyectos__galeria .img-2 {
+    background-image: url(../img/proyectos/untraceable.webp);
+    flex-direction: column;
+  }
+  .proyectos__galeria .img-3 {
+    background-image: url(../img/proyectos/weather-with-franco.webp);
+    flex-direction: column;
+  }
