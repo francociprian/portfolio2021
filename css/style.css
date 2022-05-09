@@ -239,7 +239,13 @@ body {
     text-align: center;
 }
 .links__iconos{
-    font-size: 5rem;
+    font-size: 3rem;
+}
+.curriculum i {
+    font-size: 2.5rem;
+}
+.curriculum p {
+    padding-top: 8px;
 }
 
 
