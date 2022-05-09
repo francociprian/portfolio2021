@@ -209,6 +209,9 @@ body {
     max-width: 992px;
     margin: 0 auto;
 }
+.portfolio .parrafo {
+    padding-bottom: 2rem;
+}
 
 .portfolio__galeria {
     max-width: 100%;
@@ -216,10 +219,18 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.portfolio__galeria a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.portfolio__galeria p {
+    font-size: 2rem;
+}
 
 .portfolio__galeria-img {
     max-width: 100%;
-    padding-top: 60px;
+    /* padding-top: 60px; */
     padding-bottom: 40px;
     border-radius: 5px;
 }
@@ -346,6 +357,12 @@ body {
         display: flex;
         flex-direction: row;
     }
+    .portfolio__galeria {
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
 
     .portfolio__galeria-img {
         padding-top: 50px;
@@ -358,84 +375,10 @@ body {
     }
 
 }
-
-
-
-
-.proyectos__galeria {
-    padding-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
+@media only screen and (max-width: 500px){
+    .contacto__body{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 3.5rem;
+    }
 }
-.proyectos__galeria article {
-    width: 950px;
-    height: 480px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  
-  .proyectos__galeria article:hover p,
-  .proyectos__galeria article:hover h3,
-  .proyectos__galeria article:hover::before {
-    opacity: .9;
-  }
-  
-  .proyectos__galeria article::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.938);
-    opacity: 0;
-    transition: opacity .7s;
-  }
-  
-  .proyectos__galeria article h3,
-  .proyectos__galeria article p {
-    position: relative;
-    z-index: 99;
-    opacity: 0;
-    transition: opacity .5s;
-    color: white;
-    text-align: center;
-  }
-  
-  a {
-      color: aliceblue;
-      list-style: none;
-      text-decoration: none;
-  }
-
-  .proyectos__galeria article .proyecto__titulo {
-    font-size: 2.5em;
-    text-decoration-color: rgba(237, 242, 244, 0.623);
-    font-weight: 300;
-    margin-bottom: 0.5rem;
-  }
-  
-  .proyectos__galeria article .proyecto__descripcion {
-    font-size: 1.5em;
-    padding-bottom: 2rem;
-  }
-  
-  .proyectos__galeria .img-1 {
-    background-image: url(../img/proyectos/9points.webp);
-    flex-direction: column;
-  }
-  .proyectos__galeria .img-2 {
-    background-image: url(../img/proyectos/untraceable.webp);
-    flex-direction: column;
-  }
-  .proyectos__galeria .img-3 {
-    background-image: url(../img/proyectos/weather-with-franco.webp);
-    flex-direction: column;
-  }
