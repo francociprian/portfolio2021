@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Franco Ciprian | Frontend Developer</title>
     <link rel="stylesheet" href="css/style.css">
@@ -17,9 +16,11 @@
     <!--ENCABEZADO-->
     <header class="header">
         <nav class="nav">
-            <!-- <a href="#" class="logo links"><span>&lt</span>franco/<span>&gt</span></a> -->
-            <a href="#" class="logo links"><img src='./img/img portada.png' alt="logo" class="logo-img" ></a>
+            <a href="#" class="logo links"><span>&lt</span>franco/<span>&gt</span></a>
             <ul class="nav-menu">
+                <li class="nav-menu-item">
+                    <a href="#inicio" class="nav-menu-link links">Inicio</a>
+                </li>
                 <li class="nav-menu-item">
                     <a href="#sobre-mi" class="nav-menu-link links">Sobre Mí</a>
                 </li>
@@ -41,52 +42,15 @@
 
     <!--INICIO-->
     <section class="inicio" id="inicio">
-
-        <!-- <div class="inicio-bg">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" id="blobSvg" style="opacity: 1;" filter="blur(50px)">
-                <defs>
-                    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                        <stop offset="0%" style="stop-color: rgb(88, 45, 21);"></stop>
-                        <stop offset="100%" style="stop-color: rgb(88, 45, 21);"></stop>                        
-                    </linearGradient>                        
-                </defs>                                            
-                <path id="blob" fill="url(#gradient)" style="opacity: 1;">
-                    <animate attributeName="d" dur="8.2s" repeatCount="indefinite" values="M402.82336,294.74662Q372.52122,339.49324,339.45366,380.77461Q306.3861,422.05598,251.70463,416.9165Q197.02317,411.77702,159.66506,377.28619Q122.30695,342.79537,72.75579,296.39768Q23.20463,250,37.88851,178.24662Q52.57238,106.49324,117.0304,72.97924Q181.48842,39.46525,238.53957,73.79537Q295.59073,108.12549,332.49083,135.50917Q369.39092,162.89286,401.2582,206.44643Q433.12549,250,402.82336,294.74662Z;M423.38828,307.00416Q406.39243,364.00831,353.55217,384.57202Q300.71191,405.13573,242.06787,430.50416Q183.42382,455.87258,116.5554,425.63666Q49.68697,395.40075,58.87581,322.70037Q68.06464,250,86.66067,197.31625Q105.2567,144.63251,148.86843,108.53648Q192.48015,72.44045,252.10019,66.13989Q311.72022,59.83933,378.54063,84.21929Q445.36105,108.59925,442.87258,179.29963Q440.38412,250,423.38828,307.00416Z;M428.88107,298.41731Q382.87896,346.83463,343.6411,381.94757Q304.40324,417.06052,249.73188,417.66327Q195.06052,418.26602,121.90324,407.33463Q48.74595,396.40324,42.90922,323.20162Q37.07249,250,50.04223,182.03624Q63.01197,114.07249,129.2076,98.49191Q195.40324,82.91133,251.0746,78.83673Q306.74595,74.76214,356.50598,105.64321Q406.26602,136.52427,440.5746,193.26214Q474.88318,250,428.88107,298.41731Z;M424.84079,321.86371Q447.86386,393.72743,384.56836,431.15935Q321.27286,468.59128,248.86371,472.84107Q176.45457,477.09086,148.84107,410.1135Q121.22757,343.13614,67.95457,296.56807Q14.68157,250,76.45485,209.5685Q138.22813,169.13699,166.2505,123.59142Q194.27286,78.04585,249.70464,79.81828Q305.13643,81.59072,362.47721,103.93179Q419.818,126.27286,410.81786,188.13643Q401.81772,250,424.84079,321.86371Z;M410.95278,296.31131Q377.83016,342.62262,346.59668,396.40799Q315.3632,450.19336,253.66275,438.70512Q191.9623,427.21687,143.72172,394.79004Q95.48115,362.3632,86.24057,306.1816Q77,250,74.51885,185.3632Q72.0377,120.72639,123.0377,68.91975Q174.0377,17.1131,239.88914,47.47163Q305.74057,77.83016,366.40332,99.75233Q427.06607,121.67451,435.57074,185.83725Q444.0754,250,410.95278,296.31131Z;M402.82336,294.74662Q372.52122,339.49324,339.45366,380.77461Q306.3861,422.05598,251.70463,416.9165Q197.02317,411.77702,159.66506,377.28619Q122.30695,342.79537,72.75579,296.39768Q23.20463,250,37.88851,178.24662Q52.57238,106.49324,117.0304,72.97924Q181.48842,39.46525,238.53957,73.79537Q295.59073,108.12549,332.49083,135.50917Q369.39092,162.89286,401.2582,206.44643Q433.12549,250,402.82336,294.74662Z">                  
-                    </animate>
-                </path>
-            </svg>
-        </div> -->
-
-        <div class="inicio-nombre">
-            <h1 class="inicio-title">
-                <span>Franco Ciprian</span> 
-                <span>—FrontEnd Developer</span> 
-            </h1>
+        <div class="perfil">
+            <img src="./img/fc.png" alt="Foto de perfil" class="perfil-img">
         </div>
-        <div class="inicio-coment">
-            <p>Mucho gusto por el diseño! 🎨 y la Programación ⚙️💻</p>
+        <div class="saludo">
+            <p class="saludo__texto">
+                Hola! <br> <span class="saludo__texto-color">Soy Franco Ciprian</span>
+            </p>
+            <h1 class="saludo-titulo">Desarrollador Front-End</h1>
         </div>
-        <div >
-            <div class="inicio-arrow">
-                <a class="links" href="#sobre-mi">
-                    <i class="fa-solid fa-arrow-down"></i>
-                </a>
-            </div>
-        </div>
-
-        <!-- <div class="inicio-div">
-            <h1 class="inicio-div-title">
-                <span style="--start-color:#007CF0; --end-color:#00DFD8; --content: 'FrontEnd';">
-                  FrontEnd 
-                </span>
-                <span style="--start-color:#7928CA; --end-color:#FF0080; --content: 'Developer'; --animation:a2;">
-                  Developer
-                </span>
-                <span style="--start-color:#FF4D4D; animation-name:a3; --end-color:#F9CB28; --content: 'Jr.'; --animation: a3">
-                  Jr. 
-                </span>
-              </h1>
-        </div> -->
     </section>
 
     <!--SOBRE MI-->
@@ -122,9 +86,9 @@
             <i class="fa-brands fa-sass iconos" aria-hidden="true">
                 <p class="contenedor__iconos-texto">Sass</p>
             </i>
-            <i class="fa-brands fa-git-alt iconos" aria-hidden="true">
+            <!-- <i class="fa-brands fa-git-alt iconos" aria-hidden="true">
                 <p class="contenedor__iconos-texto">Git</p>
-            </i>
+            </i> -->
             <i class="fa-brands fa-github iconos" aria-hidden="true">
                 <p class="contenedor__iconos-texto">GitHub</p>
             </i>
@@ -140,13 +104,13 @@
         <p class="parrafo">Últimos proyectos realizados:</p>
         <div class="portfolio__galeria">
 
+            <a href="https://github.com/francociprian/9POINTS" target="_blank">
+                <p>9POINTS</p>
+                <img src="img/proyectos/9points.webp" alt="9POINTS" class="portfolio__galeria-img">
+            </a>
             <a href="https://github.com/francociprian/CODERHOUSE-JavaScript" target="_blank">
                 <p>Untraceable</p>
                 <img src="img/proyectos/untraceable.webp" alt="Untraceable" class="portfolio__galeria-img">
-            </a>
-            <a href="https://github.com/francociprian/9POINTS" target="_blank">
-                <p>9Points</p>
-                <img src="img/proyectos/9points.webp" alt="9POINTS" class="portfolio__galeria-img">
             </a>
             <a href="https://github.com/francociprian/Weather-with-Franco" target="_blank">
                 <p>Weather With Franco</p>
@@ -165,6 +129,10 @@
                 <p>React-Ecommerce</p>
                 <img src="img/proyectos/React-Ecommerce.webp" alt="React-Ecommerce" class="portfolio__galeria-img">
             </a>
+            <a href="https://github.com/francociprian/SocialTree" target="_blank">
+                <p>SocialTree</p>
+                <img src="img/proyectos/socialTree.png" alt="SocialTree" class="portfolio__galeria-img">
+            </a>
         </div>
     </section>
 
@@ -173,7 +141,7 @@
     <section class="contacto padding-top" id="contacto">
         <h2 class="titulo">Contacto</h2>
         <div class="contacto__body">
-            <a href="https://drive.google.com/file/d/1gMxwomFggv3_B0oLlwuaZD1RhMvzcfxo/view?usp=sharing" target="_blank" class="links curriculum">
+            <a href="https://drive.google.com/file/d/1oL7RCxzYAJOC0ggCC0E1y-TR2uQKiVEL/view?usp=sharing" target="_blank" class="links curriculum">
                 <i class="fa-solid fa-cloud-arrow-down links__iconos"></i>
                 <p class="contenedor__body-texto">Curriculum</p>
             </a>
@@ -198,7 +166,7 @@
 
     <!--PIE DE PAGINA-->
     <footer class="footer padding-top">
-        <p class="footer-text">All rights reserved © Franco Ciprian 2022</p>
+        <p class="footer-text"> 2021 ©FRANCOCIPRIAN</p>
     </footer>
 
     <script defer src="js/script.js"></script>
